@@ -2,6 +2,7 @@
 a C++ program, which solves any solvable sudoku puzzle and prints solution to the terminal.
 It can handle unsolvable sudokus as well.
 
+
 ## how the algorithm works
 1) The input board is saved as columns and blocks (3x3 sub-boxes of the grid), and the solve_sudoku method is called.
 2) In the solve_sudoku function, it iterates through all rows in the grid and identifies empty cells and missing numbers for each row.
@@ -12,3 +13,7 @@ It can handle unsolvable sudokus as well.
 7) Once the algorithm finishes iterating and guessing in the solve_sudoku method, it checks if all blocks in the grid have exactly nine elements. If this condition is true, it considers the puzzle solved.
 
 ## usage
+go to line 177 and set board =  your sudoku board you wish to be solved. Compile and run.<br>
+your grid should meet this format:<br> Grid is a 2d vector containing 9 subvectors with numbers from '1'-'9' (stored as characters). '.'(dot) indicates an empty cell. Example: { {'.','.','.','8','.','.','.','.','9'},{'.','8','7','3','.','.','.','4','.'},{'6','.','.','7','.','.','.','.','.'},{'.','.','8','5','.','.','9','7','.'},{'.','.','.','.','.','.','.','.','.'},{'.','4','3','.','.','7','5','.','.'},{'.','.','.','.','.','3','.','.','.'},{'.','3','.','.','.','1','4','5','.'},{'4','.','.','.','.','2','.','.','1'} }; <br>
+
+for program tests uncoment line 2 (#include"../tests/tests.cpp") and line 175 (test::complete_test(board, blocks, columns);)
