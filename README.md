@@ -1,7 +1,9 @@
 # sudoku-solver
 a C++ program, which solves any solvable sudoku puzzle and prints solution to the terminal.
 It can handle unsolvable sudokus as well.
-
+<p align="center">
+ <img src="https://github.com/coconut41/sudoku-solver/blob/main/solved_sudoku.png" alt="solved_sudoku_image" width="205" height="210" />
+</p>
 
 ## how the algorithm works
 1) The input board is saved as columns and blocks (3x3 sub-boxes of the grid), and the solve_sudoku method is called.
