@@ -16,6 +16,9 @@ It can handle unsolvable sudokus as well.
 
 ## usage
 go to line 177 and set board =  your sudoku board you wish to be solved. Compile and run.<br>
+ - Compilation: g++ -g src/sudoku_solve.cpp -o solved
+ - execute: ./solved on linux. If on windows then just double click file called 'solved' <br>
+ 
 your grid should meet this format:<br> Grid is a 2d vector containing 9 subvectors with numbers from '1'-'9' (stored as characters). '.'(dot) indicates an empty cell. Example: { {'.','.','.','8','.','.','.','.','9'},{'.','8','7','3','.','.','.','4','.'},{'6','.','.','7','.','.','.','.','.'},{'.','.','8','5','.','.','9','7','.'},{'.','.','.','.','.','.','.','.','.'},{'.','4','3','.','.','7','5','.','.'},{'.','.','.','.','.','3','.','.','.'},{'.','3','.','.','.','1','4','5','.'},{'4','.','.','.','.','2','.','.','1'} }; <br>
 
 for program tests uncoment line 2 (#include"../tests/tests.cpp") and line 175 (test::complete_test(board, blocks, columns);)
